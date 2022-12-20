@@ -808,21 +808,21 @@ a.footer_links:hover {
         flex-direction: column; 
         align-items: center;
         justify-content: center;
-        background-image: url(images/produkt_baggrund_mobile.png);
+        background-image: url(images/produkt_baggrund_mobile.webp);
     }
     
     .ts_light.active {
         flex-direction: column; 
         align-items: center;
         justify-content: center;
-        background-image: url(images/produkt_baggrund_mobile.png);
+        background-image: url(images/produkt_baggrund_mobile.webp);
     }
 
     .ts_zero.active {
         flex-direction: column; 
         align-items: center;
         justify-content: center;
-        background-image: url(images/produkt_baggrund_mobile.png);
+        background-image: url(images/produkt_baggrund_mobile.webp);
     }
     
 
