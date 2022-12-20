@@ -1,0 +1,901 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*Generelt*/
+* {
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+/*Navigations bar*/
+nav {
+    background-color: #385623;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: #aeba29;
+    text-decoration: none;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.nav_link {
+    font-family: 'Lexend', sans-serif;
+    padding: 8px 0px;
+}
+
+.nav_link:hover {
+    color: #feaa0d;
+}
+
+.nav_width {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.language_div{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #aeba29;
+    font-family: 'Lexend', sans-serif;
+    cursor: pointer;
+}
+
+.language {
+    text-align: end;
+    text-decoration: none;
+    font-size: 16px;
+    color: #aeba29;
+    font-family: 'Lexend', sans-serif;
+}
+
+.language:hover {
+    color: #feaa0d;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    height: 50px;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    margin: -50px 0px 0px 100px;
+    display: block;
+}
+
+/*Forside*/
+.f_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.f_sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.f_billede_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 10px 0px;
+}
+
+.f_billeder {
+    height: auto;
+    max-width: 800px;
+    min-width: 200px;
+}
+
+.f_tekst_div {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 125px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    flex: 1;
+}
+
+.f_link {
+    color: black;
+}
+
+.f_link:hover {
+    color: blue;
+}
+
+/*Produkter / Tuborg produkter*/
+.p_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.p_overskrift {
+    width: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif;
+    margin-top: 65px;
+    margin-left: 10%;
+}
+
+.p_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+}
+
+.produkt_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 60px 1%;
+    border: 1px black solid;
+}
+
+.p_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.p_img {
+    max-width: 100%;
+    height: 150px;
+}
+
+.p_underskrift {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.p_m_invis {
+    width: 20%;
+    margin: 60px 1%;
+}
+
+.no_img {
+    height: 1px;
+    width: 1px;
+}
+
+/*Squash*/
+.section_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    border-bottom: 2px black solid ;
+}
+
+.div_tilbage {
+    width: 50%;
+    margin-left: 250px;
+}
+
+.tilbage {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+}
+
+.div_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Squash --> Buttons*/
+.s_btn {
+    margin: 0px 10px;
+    background-color: #385623;
+    color: #aeba29;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.s_btn:hover {
+    color: #feaa0d;
+}
+
+.ts_original {
+    display: none;
+}
+
+.ts_original.active {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    background-image: url(images/produkt_baggrund.webp);
+}
+
+.ts_light {
+    display: none;
+}
+
+.ts_light.active {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    background-image: url(images/produkt_baggrund.webp);
+}
+
+.ts_zero {
+    display: none;
+}
+
+.ts_zero.active {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    background-image: url(images/produkt_baggrund.webp);
+}
+
+/*Squash --> Original, Light, Zero info*/
+.squash_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+}
+
+.top_img {
+    display: flex;
+    justify-content: center;
+    border: 1px black solid;
+    max-width: 400px;
+    max-height: 550px;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+.squash_big {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0px 50px;
+}
+
+.bottom_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bottom_img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    width: 100px;
+    height: 125px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.squash_small {
+    max-height: 100px;
+    max-width: 100px;    
+}
+
+.neutral {
+    margin: 0px;
+    width: 100px;
+}
+
+.squash_tekst_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.squash_img_tabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+table tr {
+    background-color: #feaa0d;
+}
+
+.name_td {
+    padding-left: 10px;
+}
+
+.nutrition {
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+    border: black 1px solid;
+    line-height: 25px;
+}
+
+.nutrition_td {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.squash_img_tekst {
+    background-color: #feaa0d;
+    height: auto;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.squash_header {
+    padding: 10px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #feaa0d;
+    text-align: center;
+    width: 100%;
+}
+
+.squash_img_knapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.squash_knap {
+    margin: 30px 0px;
+    background-color: #feaa0d;
+}
+
+.squash_link {
+    text-decoration: none;
+    color: black;
+}
+
+.knap_tekst {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Kontakt*/
+.main_kontakt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gmaps_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 510px;
+    margin-top: 50px;
+}
+
+.googlemaps {
+    width: 600px;
+    height: 450px;
+    border: 0px;
+}
+
+.kontakt_info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 40px;
+}
+
+.carlsberg_logo {
+    height: auto;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.bold {
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.kontakt_tekst {
+    line-height: 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.kontakt_tekst:hover {
+    color: blue;
+}
+
+h5 {
+    line-height: 2rem;
+}
+
+/*Footer*/
+footer {
+    list-style: none;
+    background-color: #385623;
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer_head {
+    font-size: 1rem;
+    margin: 20px 0px 5px 0px;
+}
+
+.footer_content {
+    color: #aeba29;
+}
+
+.footer_icon {
+    width: 44px;
+    height: 44px;
+    margin: 0px 5px;
+}
+
+.footer_links {
+    text-decoration: none;
+    color: #aeba29;
+    display: block;
+    font-size: 0.9rem;
+}
+
+a.footer_links:hover {
+    color: #feaa0d;
+}
+
+/* 404 / Construcion */
+.main_construcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_construcion {
+    height: auto;
+    max-width: 800px;
+    margin: 55px 0px;
+}
+
+.construcion_tekst {
+    margin: 20px 0px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media(max-width:1200px) {
+    /*Produkter*/
+    .p_row {
+        height: 200px;
+    }
+
+    .p_img {
+        height: 100px;
+    }
+
+    /*Squash*/
+    .tilbage {
+        font-size: 1.1rem;
+    }
+    
+    .s_btn {
+        font-size: 0.9rem;
+    }    
+}
+
+@media(max-width:900px) {
+    /*Navigations bar*/
+    .nav_menu {
+        gap: 30px;
+    }
+
+    /*Forside*/
+    .f_tekst_div {
+        margin: 0px 50px 25px 50px;
+        line-height: 1.2rem;
+    }
+
+    /*Produkter*/
+    .p_row {
+        height: 150px;
+    }
+
+    .p_img {
+        height: 70px;
+    }
+
+    .p_underskrift {
+        font-size: 15px;
+    }
+       
+    /*Squash*/
+    .tilbage {
+        font-size: 1rem;
+    }
+    
+    .s_btn {
+        font-size: 0.8rem;
+    }
+
+    /*Kontakt*/
+    .main_kontakt {
+        flex-direction: column;
+    }
+
+    .gmaps_div {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .googlemaps {
+        max-width: 600px;
+        max-height: 450px;
+    }
+
+    .kontakt_info {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .carlsberg_logo {
+        margin-bottom: 10px;
+    }
+
+    /* 404 / Construcion */
+    .img_construcion {
+        max-width: 600px;
+    }
+
+    .construcion_tekst {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:700px) {
+    /*Navigations bar*/
+    .nav_width {
+        width: 100%;
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: -100%;
+        gap: 0px;
+        flex-direction: column;
+        background-color: #385623;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav_item {
+        margin: 16px 0px;
+    }
+
+    .nav_menu.active {
+        top: 65px;
+        left: 0px;
+    }
+
+    /*Header*/
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin: -50px 0px 0px 0px;
+    }
+
+    .logo.active {
+        display: none;
+    }
+
+    /*Forside*/
+    .f_sections {
+        flex-direction: column;
+    }
+    
+    .f_billede_div {
+        width: 100%;
+    }
+    
+    .f_billeder {
+        max-width: 400px;
+        min-width: 200px;
+        margin: 0px 40px;
+    }
+    
+    .f_tekst_div {
+        margin: 0px 50px 25px 50px;
+        line-height: 1.3rem;
+    }
+
+    div.f_billede_div {
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    div.f_tekst_div {
+        -webkit-order: 2;
+        order: 2;
+    }
+        
+    /*Produkter*/
+    .p_main {
+        align-items: center;
+    }
+
+    .p_row {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        max-width: 80%;
+    }
+
+    .produkt_menu {
+        width: 100%;
+        margin: 60px 100px;
+    }
+
+    .p_img {
+        max-width: 100%;
+        height: 150px;
+    }
+
+    .p_underskrift {
+        margin-top: 10px;
+    }
+
+    .p_m_invis {
+        display: none;
+    }
+    
+    .no_img {
+        display: none;
+    }
+
+    /*Squash*/
+    .div_tilbage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    
+    .s_btn {
+        margin: 0px 5px;
+        font-size: 0.7rem;
+    }
+
+    .ts_original.active {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/produkt_baggrund_mobile.png);
+    }
+    
+    .ts_light.active {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/produkt_baggrund_mobile.png);
+    }
+
+    .ts_zero.active {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/produkt_baggrund_mobile.png);
+    }
+    
+
+    /*Squash --> Original, Light, Zero info*/
+    .squash_img {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .top_img {
+        width: 80%;
+    }
+
+    .bottom_img1 {
+        width: 60px;
+        height: 100px;
+    }
+
+    .squash_small {
+        height: 80px;
+        width: auto;    
+    }
+
+    .neutral {
+        display: block;
+        margin: 0px;
+        width: 60px;
+    }
+
+    .squash_tekst_section {
+        width: 80%;
+    }
+
+    .squash_img_tabel {
+        margin-bottom: 20px
+    }
+
+    .squash_img_tekst {
+        margin-bottom: 30px
+    }
+
+    .squash_knap {
+        margin-bottom: 30px;
+    }
+
+    /*Kontakt*/
+    .gmaps_div {
+        margin-top: 30px;
+    }
+
+    .googlemaps {
+        max-width: 350px;
+    }
+
+    /*Footer*/
+    footer {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .footer_head {
+        margin-top: 30px;
+    }
+
+    /* 404 / Construcion */
+    .img_construcion {
+        max-width: 300px;
+    }
+
+    .construcion_tekst {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-top: 0px;
+    }
+}
